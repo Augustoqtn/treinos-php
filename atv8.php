@@ -7,6 +7,11 @@ $funcionario = [
     3000,
 ];
 
+for ($i = 0; $i < count($funcionario); $i++) {
+    $bonificacao = calculaAumentoSalario($funcionario[$i]);
+    echo "Seu salário agora é de $bonificacao" . PHP_EOL;
+}
+
 calculaAumentoSalario(500);
 
 function calculaAumentoSalario($valor)
